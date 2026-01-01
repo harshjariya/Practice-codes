@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primenumbers in range</title>
+</head>
+<body>
+    <script>
+
+      
+    
+       // if(n==0 || n==1){
+         //   alert("number is not prime number");
+        //}
+        
+        let start= parseInt(prompt("enter start range:"));
+        let end= parseInt(prompt("Enter ending range:"));
+        
+    for(let j=start;j<end;j++){
+        let flag = 1;
+        
+        for(let i=2;i<j;i++){
+            if(j%i==0){
+                flag = 2;
+                break;
+            }
+        }
+        if(flag==1)
+        document.write(j+",")
+       
+    }
+        
+
+    </script>
+</body>
+</html>
